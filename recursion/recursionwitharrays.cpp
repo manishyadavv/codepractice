@@ -24,42 +24,98 @@ int recursionwitharrays(int arr[],int size)
 //Expectation=> print champion from arr we want
 // Faith => we know champion from arr[1]-arr[n],
 //E<=>F arr[1]-arr[n] ka champion agar arr[0] se bada to return champion else return arr[0]
-int printMax(int arr[],int size)
+int printMax(int arr[],int indx)
 {
-    if(size==4)
+    if(indx==4)
     {
-     return arr[size];
+     return arr[indx];
     }
 
-    int misa = printMax(arr,size+1);
+    int misa = printMax(arr,indx+1);
 
-    if(misa>=arr[size])
+    if(misa>=arr[indx])
     {return misa;}
     else
-    { return arr[size];}
+    { return arr[indx];}
 
 }
-int linearSearch(int arr[],int size,int key)
+int linearSearch(int arr[],int indx,int key)
 {
 
-    if(size==5)
+    if(indx==5)
         return 0  ;
-    if(arr[size]==key)
-    {cout<<"Found at"<<" "<<size;
+    if(arr[indx]==key)
+    {cout<<"Found at"<<" "<<indx;
         return 0;
     }
-    linearSearch(arr,size+1,key);
+    linearSearch(arr,indx+1,key);
 
     return 0;
 
 }
+int firstIndex(int arr[],int indx,int key)
+{
+
+if(indx==5)
+{
+    return -1;
+
+}
+    if(arr[indx]==key)
+    {
+        return indx;
+    }
+    //this else condition is helping in
+    //like if 20 is found then during the recursion
+    // above if condition will return indx otherwise
+    // this else will return -1 kyuki base condition se
+    // fisa me -1 to aa hi jana hai;
+    else {
+     int fisa=   firstIndex(arr, indx + 1, key);
+     return fisa;
+    }
+
+}
+
+
+int lastIndex(int arr[],int indx,int key) {
+    //iss recursion call se pehle last tk aa gaye
+    //iss last index ka -1 retun ka matlb hai ki key nhi milli
+
+    //PLACEMENT OF THIS BASE CONDITION IS IMP TOO
+    // IF IT IS PLACED BELOW CALL CAN LEAD TO INF RECURSION
+    if (indx == 5) {
+        return -1;
+
+    }
+    int lisa = lastIndex(arr, indx + 1, key);
+
+
+    if(lisa==-1) {
+
+        if (arr[indx] == key)
+            return indx;
+        else
+            return -1;
+
+    } else{
+        return lisa;
+    }
+
+}
+
 
 
 int main()
 {
-    int arr[5]={10,20,30,40,50};
+    int arr[5]={10,20,30,20,50};
     cout<<printMax(arr,0);
     cout<<endl;
     linearSearch(arr,0,50);
+    cout<<endl;
+    cout<<firstIndex(arr,0,20);
+    cout<<endl;
+    cout<<lastIndex(arr,0,20);
+
     return 0;
 }
