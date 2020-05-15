@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named vector-rotation
+
+# Build rule for target.
+vector-rotation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vector-rotation
+.PHONY : vector-rotation
+
+# fast build rule for target.
+vector-rotation/fast:
+	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/build
+.PHONY : vector-rotation/fast
+
+#=============================================================================
 # Target rules for targets named TowerOfhanoi
 
 # Build rule for target.
@@ -403,6 +416,33 @@ recursion/recursionwitharrays.cpp.s:
 	$(MAKE) -f CMakeFiles/recursionwitharrays.dir/build.make CMakeFiles/recursionwitharrays.dir/recursion/recursionwitharrays.cpp.s
 .PHONY : recursion/recursionwitharrays.cpp.s
 
+recursion/vector-rotation.o: recursion/vector-rotation.cpp.o
+
+.PHONY : recursion/vector-rotation.o
+
+# target to build an object file
+recursion/vector-rotation.cpp.o:
+	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/recursion/vector-rotation.cpp.o
+.PHONY : recursion/vector-rotation.cpp.o
+
+recursion/vector-rotation.i: recursion/vector-rotation.cpp.i
+
+.PHONY : recursion/vector-rotation.i
+
+# target to preprocess a source file
+recursion/vector-rotation.cpp.i:
+	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/recursion/vector-rotation.cpp.i
+.PHONY : recursion/vector-rotation.cpp.i
+
+recursion/vector-rotation.s: recursion/vector-rotation.cpp.s
+
+.PHONY : recursion/vector-rotation.s
+
+# target to generate assembly for a file
+recursion/vector-rotation.cpp.s:
+	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/recursion/vector-rotation.cpp.s
+.PHONY : recursion/vector-rotation.cpp.s
+
 recursion/vectors.o: recursion/vectors.cpp.o
 
 .PHONY : recursion/vectors.o
@@ -438,6 +478,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... vector-rotation"
 	@echo "... TowerOfhanoi"
 	@echo "... recursionwitharrays"
 	@echo "... vectors"
@@ -467,6 +508,9 @@ help:
 	@echo "... recursion/recursionwitharrays.o"
 	@echo "... recursion/recursionwitharrays.i"
 	@echo "... recursion/recursionwitharrays.s"
+	@echo "... recursion/vector-rotation.o"
+	@echo "... recursion/vector-rotation.i"
+	@echo "... recursion/vector-rotation.s"
 	@echo "... recursion/vectors.o"
 	@echo "... recursion/vectors.i"
 	@echo "... recursion/vectors.s"

@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /Users/manishyadav/Downloads/untitled1/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/vector-rotation.dir/all
 all: CMakeFiles/TowerOfhanoi.dir/all
 all: CMakeFiles/recursionwitharrays.dir/all
 all: CMakeFiles/vectors.dir/all
@@ -65,6 +66,7 @@ all: CMakeFiles/main.dir/all
 .PHONY : all
 
 # The main recursive "clean" target.
+clean: CMakeFiles/vector-rotation.dir/clean
 clean: CMakeFiles/TowerOfhanoi.dir/clean
 clean: CMakeFiles/recursionwitharrays.dir/clean
 clean: CMakeFiles/vectors.dir/clean
@@ -80,6 +82,33 @@ clean: CMakeFiles/main.dir/clean
 preinstall:
 
 .PHONY : preinstall
+
+#=============================================================================
+# Target rules for target CMakeFiles/vector-rotation.dir
+
+# All Build rule for target.
+CMakeFiles/vector-rotation.dir/all:
+	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/depend
+	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target vector-rotation"
+.PHONY : CMakeFiles/vector-rotation.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vector-rotation.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vector-rotation.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/vector-rotation.dir/rule
+
+# Convenience name for target.
+vector-rotation: CMakeFiles/vector-rotation.dir/rule
+
+.PHONY : vector-rotation
+
+# clean rule for target.
+CMakeFiles/vector-rotation.dir/clean:
+	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/clean
+.PHONY : CMakeFiles/vector-rotation.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/TowerOfhanoi.dir
@@ -142,7 +171,7 @@ CMakeFiles/recursionwitharrays.dir/clean:
 CMakeFiles/vectors.dir/all:
 	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/depend
 	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target vectors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target vectors"
 .PHONY : CMakeFiles/vectors.dir/all
 
 # Build rule for subdir invocation for target.

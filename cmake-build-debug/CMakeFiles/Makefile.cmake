@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/vector-rotation.dir/DependInfo.cmake"
   "CMakeFiles/TowerOfhanoi.dir/DependInfo.cmake"
   "CMakeFiles/recursionwitharrays.dir/DependInfo.cmake"
   "CMakeFiles/vectors.dir/DependInfo.cmake"
