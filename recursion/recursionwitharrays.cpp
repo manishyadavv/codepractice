@@ -104,6 +104,33 @@ int lastIndex(int arr[],int indx,int key) {
 
 }
 
+int* AllIndex(int arr[],int indx,int count,int key)
+{
+//SABSE IMP BAAT ISS QUESTION ME BASE CASE SE PAAR KRNE KE BAAD
+// RESULT ARRAY KO HEAP ME BNAYA TO WO CLEAR NHI HOGI
+
+    if(indx==4) {
+
+        return new int[count];
+    }
+
+
+    if(arr[indx]==key)
+    {
+       int *res= AllIndex(arr, indx + 1, count + 1, key);
+        res[count]=indx;
+        return res;
+    }
+
+    else {
+        int *res = AllIndex(arr, indx + 1, count, key);
+        return res;
+
+    }
+
+
+}
+
 
 
 int main()
@@ -116,6 +143,14 @@ int main()
     cout<<firstIndex(arr,0,20);
     cout<<endl;
     cout<<lastIndex(arr,0,20);
+
+    cout<<endl;
+    int* arr2=AllIndex(arr,0,0,20);
+    cout<<"indexes are"<<" ";
+    for(int i =0;i<2;i++)
+    {
+        cout<<*(arr2+i)<<" ";
+    }
 
     return 0;
 }
