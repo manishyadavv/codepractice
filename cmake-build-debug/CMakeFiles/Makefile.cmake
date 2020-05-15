@@ -54,6 +54,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TowerOfhanoi.dir/DependInfo.cmake"
   "CMakeFiles/recursionwitharrays.dir/DependInfo.cmake"
+  "CMakeFiles/vectors.dir/DependInfo.cmake"
   "CMakeFiles/mani.dir/DependInfo.cmake"
   "CMakeFiles/recursion-power.dir/DependInfo.cmake"
   "CMakeFiles/recursion-factorial.dir/DependInfo.cmake"

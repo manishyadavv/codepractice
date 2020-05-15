@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /Users/manishyadav/Downloads/untitled1/cmake-build-debug
 # The main recursive "all" target.
 all: CMakeFiles/TowerOfhanoi.dir/all
 all: CMakeFiles/recursionwitharrays.dir/all
+all: CMakeFiles/vectors.dir/all
 all: CMakeFiles/mani.dir/all
 all: CMakeFiles/recursion-power.dir/all
 all: CMakeFiles/recursion-factorial.dir/all
@@ -66,6 +67,7 @@ all: CMakeFiles/main.dir/all
 # The main recursive "clean" target.
 clean: CMakeFiles/TowerOfhanoi.dir/clean
 clean: CMakeFiles/recursionwitharrays.dir/clean
+clean: CMakeFiles/vectors.dir/clean
 clean: CMakeFiles/mani.dir/clean
 clean: CMakeFiles/recursion-power.dir/clean
 clean: CMakeFiles/recursion-factorial.dir/clean
@@ -132,6 +134,33 @@ recursionwitharrays: CMakeFiles/recursionwitharrays.dir/rule
 CMakeFiles/recursionwitharrays.dir/clean:
 	$(MAKE) -f CMakeFiles/recursionwitharrays.dir/build.make CMakeFiles/recursionwitharrays.dir/clean
 .PHONY : CMakeFiles/recursionwitharrays.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/vectors.dir
+
+# All Build rule for target.
+CMakeFiles/vectors.dir/all:
+	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/depend
+	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target vectors"
+.PHONY : CMakeFiles/vectors.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/vectors.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vectors.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/vectors.dir/rule
+
+# Convenience name for target.
+vectors: CMakeFiles/vectors.dir/rule
+
+.PHONY : vectors
+
+# clean rule for target.
+CMakeFiles/vectors.dir/clean:
+	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/clean
+.PHONY : CMakeFiles/vectors.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/mani.dir

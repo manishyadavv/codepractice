@@ -137,6 +137,19 @@ recursionwitharrays/fast:
 .PHONY : recursionwitharrays/fast
 
 #=============================================================================
+# Target rules for targets named vectors
+
+# Build rule for target.
+vectors: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vectors
+.PHONY : vectors
+
+# fast build rule for target.
+vectors/fast:
+	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/build
+.PHONY : vectors/fast
+
+#=============================================================================
 # Target rules for targets named mani
 
 # Build rule for target.
@@ -390,6 +403,33 @@ recursion/recursionwitharrays.cpp.s:
 	$(MAKE) -f CMakeFiles/recursionwitharrays.dir/build.make CMakeFiles/recursionwitharrays.dir/recursion/recursionwitharrays.cpp.s
 .PHONY : recursion/recursionwitharrays.cpp.s
 
+recursion/vectors.o: recursion/vectors.cpp.o
+
+.PHONY : recursion/vectors.o
+
+# target to build an object file
+recursion/vectors.cpp.o:
+	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/recursion/vectors.cpp.o
+.PHONY : recursion/vectors.cpp.o
+
+recursion/vectors.i: recursion/vectors.cpp.i
+
+.PHONY : recursion/vectors.i
+
+# target to preprocess a source file
+recursion/vectors.cpp.i:
+	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/recursion/vectors.cpp.i
+.PHONY : recursion/vectors.cpp.i
+
+recursion/vectors.s: recursion/vectors.cpp.s
+
+.PHONY : recursion/vectors.s
+
+# target to generate assembly for a file
+recursion/vectors.cpp.s:
+	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/recursion/vectors.cpp.s
+.PHONY : recursion/vectors.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -400,6 +440,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... TowerOfhanoi"
 	@echo "... recursionwitharrays"
+	@echo "... vectors"
 	@echo "... mani"
 	@echo "... recursion-power"
 	@echo "... recursion-factorial"
@@ -426,6 +467,9 @@ help:
 	@echo "... recursion/recursionwitharrays.o"
 	@echo "... recursion/recursionwitharrays.i"
 	@echo "... recursion/recursionwitharrays.s"
+	@echo "... recursion/vectors.o"
+	@echo "... recursion/vectors.i"
+	@echo "... recursion/vectors.s"
 .PHONY : help
 
 
