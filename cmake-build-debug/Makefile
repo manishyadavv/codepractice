@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named replacing-duplicates-with-sum
+
+# Build rule for target.
+replacing-duplicates-with-sum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 replacing-duplicates-with-sum
+.PHONY : replacing-duplicates-with-sum
+
+# fast build rule for target.
+replacing-duplicates-with-sum/fast:
+	$(MAKE) -f CMakeFiles/replacing-duplicates-with-sum.dir/build.make CMakeFiles/replacing-duplicates-with-sum.dir/build
+.PHONY : replacing-duplicates-with-sum/fast
+
+#=============================================================================
 # Target rules for targets named remove-the-repeaters
 
 # Build rule for target.
@@ -456,6 +469,33 @@ recursion/remove-the-repeaters.cpp.s:
 	$(MAKE) -f CMakeFiles/remove-the-repeaters.dir/build.make CMakeFiles/remove-the-repeaters.dir/recursion/remove-the-repeaters.cpp.s
 .PHONY : recursion/remove-the-repeaters.cpp.s
 
+recursion/replacing-duplicates-with-sum.o: recursion/replacing-duplicates-with-sum.cpp.o
+
+.PHONY : recursion/replacing-duplicates-with-sum.o
+
+# target to build an object file
+recursion/replacing-duplicates-with-sum.cpp.o:
+	$(MAKE) -f CMakeFiles/replacing-duplicates-with-sum.dir/build.make CMakeFiles/replacing-duplicates-with-sum.dir/recursion/replacing-duplicates-with-sum.cpp.o
+.PHONY : recursion/replacing-duplicates-with-sum.cpp.o
+
+recursion/replacing-duplicates-with-sum.i: recursion/replacing-duplicates-with-sum.cpp.i
+
+.PHONY : recursion/replacing-duplicates-with-sum.i
+
+# target to preprocess a source file
+recursion/replacing-duplicates-with-sum.cpp.i:
+	$(MAKE) -f CMakeFiles/replacing-duplicates-with-sum.dir/build.make CMakeFiles/replacing-duplicates-with-sum.dir/recursion/replacing-duplicates-with-sum.cpp.i
+.PHONY : recursion/replacing-duplicates-with-sum.cpp.i
+
+recursion/replacing-duplicates-with-sum.s: recursion/replacing-duplicates-with-sum.cpp.s
+
+.PHONY : recursion/replacing-duplicates-with-sum.s
+
+# target to generate assembly for a file
+recursion/replacing-duplicates-with-sum.cpp.s:
+	$(MAKE) -f CMakeFiles/replacing-duplicates-with-sum.dir/build.make CMakeFiles/replacing-duplicates-with-sum.dir/recursion/replacing-duplicates-with-sum.cpp.s
+.PHONY : recursion/replacing-duplicates-with-sum.cpp.s
+
 recursion/vector-rotation.o: recursion/vector-rotation.cpp.o
 
 .PHONY : recursion/vector-rotation.o
@@ -518,6 +558,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... replacing-duplicates-with-sum"
 	@echo "... remove-the-repeaters"
 	@echo "... recursionwitharrays"
 	@echo "... vector-rotation"
@@ -552,6 +593,9 @@ help:
 	@echo "... recursion/remove-the-repeaters.o"
 	@echo "... recursion/remove-the-repeaters.i"
 	@echo "... recursion/remove-the-repeaters.s"
+	@echo "... recursion/replacing-duplicates-with-sum.o"
+	@echo "... recursion/replacing-duplicates-with-sum.i"
+	@echo "... recursion/replacing-duplicates-with-sum.s"
 	@echo "... recursion/vector-rotation.o"
 	@echo "... recursion/vector-rotation.i"
 	@echo "... recursion/vector-rotation.s"

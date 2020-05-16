@@ -37,6 +37,48 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="replacing-duplicates-with-sum">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/replacing-duplicates-with-sum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 replacing-duplicates-with-sum"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="replacing-duplicates-with-sum/fast">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/replacing-duplicates-with-sum" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 replacing-duplicates-with-sum/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="remove-the-repeaters">
 				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/remove-the-repeaters" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
@@ -481,6 +523,9 @@
 		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/remove-the-repeaters.cpp">
 			<Option target="remove-the-repeaters"/>
+		</Unit>
+		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/replacing-duplicates-with-sum.cpp">
+			<Option target="replacing-duplicates-with-sum"/>
 		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/vector-rotation.cpp">
 			<Option target="vector-rotation"/>
