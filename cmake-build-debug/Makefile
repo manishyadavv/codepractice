@@ -111,30 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named vector-rotation
+# Target rules for targets named remove-the-repeaters
 
 # Build rule for target.
-vector-rotation: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vector-rotation
-.PHONY : vector-rotation
+remove-the-repeaters: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 remove-the-repeaters
+.PHONY : remove-the-repeaters
 
 # fast build rule for target.
-vector-rotation/fast:
-	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/build
-.PHONY : vector-rotation/fast
-
-#=============================================================================
-# Target rules for targets named TowerOfhanoi
-
-# Build rule for target.
-TowerOfhanoi: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TowerOfhanoi
-.PHONY : TowerOfhanoi
-
-# fast build rule for target.
-TowerOfhanoi/fast:
-	$(MAKE) -f CMakeFiles/TowerOfhanoi.dir/build.make CMakeFiles/TowerOfhanoi.dir/build
-.PHONY : TowerOfhanoi/fast
+remove-the-repeaters/fast:
+	$(MAKE) -f CMakeFiles/remove-the-repeaters.dir/build.make CMakeFiles/remove-the-repeaters.dir/build
+.PHONY : remove-the-repeaters/fast
 
 #=============================================================================
 # Target rules for targets named recursionwitharrays
@@ -148,6 +135,45 @@ recursionwitharrays: cmake_check_build_system
 recursionwitharrays/fast:
 	$(MAKE) -f CMakeFiles/recursionwitharrays.dir/build.make CMakeFiles/recursionwitharrays.dir/build
 .PHONY : recursionwitharrays/fast
+
+#=============================================================================
+# Target rules for targets named vector-rotation
+
+# Build rule for target.
+vector-rotation: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vector-rotation
+.PHONY : vector-rotation
+
+# fast build rule for target.
+vector-rotation/fast:
+	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/build
+.PHONY : vector-rotation/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named TowerOfhanoi
+
+# Build rule for target.
+TowerOfhanoi: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TowerOfhanoi
+.PHONY : TowerOfhanoi
+
+# fast build rule for target.
+TowerOfhanoi/fast:
+	$(MAKE) -f CMakeFiles/TowerOfhanoi.dir/build.make CMakeFiles/TowerOfhanoi.dir/build
+.PHONY : TowerOfhanoi/fast
 
 #=============================================================================
 # Target rules for targets named vectors
@@ -213,19 +239,6 @@ recursion1: cmake_check_build_system
 recursion1/fast:
 	$(MAKE) -f CMakeFiles/recursion1.dir/build.make CMakeFiles/recursion1.dir/build
 .PHONY : recursion1/fast
-
-#=============================================================================
-# Target rules for targets named main
-
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
 
 main.o: main.cpp.o
 
@@ -416,6 +429,33 @@ recursion/recursionwitharrays.cpp.s:
 	$(MAKE) -f CMakeFiles/recursionwitharrays.dir/build.make CMakeFiles/recursionwitharrays.dir/recursion/recursionwitharrays.cpp.s
 .PHONY : recursion/recursionwitharrays.cpp.s
 
+recursion/remove-the-repeaters.o: recursion/remove-the-repeaters.cpp.o
+
+.PHONY : recursion/remove-the-repeaters.o
+
+# target to build an object file
+recursion/remove-the-repeaters.cpp.o:
+	$(MAKE) -f CMakeFiles/remove-the-repeaters.dir/build.make CMakeFiles/remove-the-repeaters.dir/recursion/remove-the-repeaters.cpp.o
+.PHONY : recursion/remove-the-repeaters.cpp.o
+
+recursion/remove-the-repeaters.i: recursion/remove-the-repeaters.cpp.i
+
+.PHONY : recursion/remove-the-repeaters.i
+
+# target to preprocess a source file
+recursion/remove-the-repeaters.cpp.i:
+	$(MAKE) -f CMakeFiles/remove-the-repeaters.dir/build.make CMakeFiles/remove-the-repeaters.dir/recursion/remove-the-repeaters.cpp.i
+.PHONY : recursion/remove-the-repeaters.cpp.i
+
+recursion/remove-the-repeaters.s: recursion/remove-the-repeaters.cpp.s
+
+.PHONY : recursion/remove-the-repeaters.s
+
+# target to generate assembly for a file
+recursion/remove-the-repeaters.cpp.s:
+	$(MAKE) -f CMakeFiles/remove-the-repeaters.dir/build.make CMakeFiles/remove-the-repeaters.dir/recursion/remove-the-repeaters.cpp.s
+.PHONY : recursion/remove-the-repeaters.cpp.s
+
 recursion/vector-rotation.o: recursion/vector-rotation.cpp.o
 
 .PHONY : recursion/vector-rotation.o
@@ -478,15 +518,16 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... vector-rotation"
-	@echo "... TowerOfhanoi"
+	@echo "... remove-the-repeaters"
 	@echo "... recursionwitharrays"
+	@echo "... vector-rotation"
+	@echo "... main"
+	@echo "... TowerOfhanoi"
 	@echo "... vectors"
 	@echo "... mani"
 	@echo "... recursion-power"
 	@echo "... recursion-factorial"
 	@echo "... recursion1"
-	@echo "... main"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -508,6 +549,9 @@ help:
 	@echo "... recursion/recursionwitharrays.o"
 	@echo "... recursion/recursionwitharrays.i"
 	@echo "... recursion/recursionwitharrays.s"
+	@echo "... recursion/remove-the-repeaters.o"
+	@echo "... recursion/remove-the-repeaters.i"
+	@echo "... recursion/remove-the-repeaters.s"
 	@echo "... recursion/vector-rotation.o"
 	@echo "... recursion/vector-rotation.i"
 	@echo "... recursion/vector-rotation.s"
