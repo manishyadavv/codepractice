@@ -124,6 +124,19 @@ replacing-duplicates-with-sum/fast:
 .PHONY : replacing-duplicates-with-sum/fast
 
 #=============================================================================
+# Target rules for targets named recursion-all-combinations
+
+# Build rule for target.
+recursion-all-combinations: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 recursion-all-combinations
+.PHONY : recursion-all-combinations
+
+# fast build rule for target.
+recursion-all-combinations/fast:
+	$(MAKE) -f CMakeFiles/recursion-all-combinations.dir/build.make CMakeFiles/recursion-all-combinations.dir/build
+.PHONY : recursion-all-combinations/fast
+
+#=============================================================================
 # Target rules for targets named remove-the-repeaters
 
 # Build rule for target.
@@ -187,6 +200,19 @@ TowerOfhanoi: cmake_check_build_system
 TowerOfhanoi/fast:
 	$(MAKE) -f CMakeFiles/TowerOfhanoi.dir/build.make CMakeFiles/TowerOfhanoi.dir/build
 .PHONY : TowerOfhanoi/fast
+
+#=============================================================================
+# Target rules for targets named recursion-strings_subsequences
+
+# Build rule for target.
+recursion-strings_subsequences: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 recursion-strings_subsequences
+.PHONY : recursion-strings_subsequences
+
+# fast build rule for target.
+recursion-strings_subsequences/fast:
+	$(MAKE) -f CMakeFiles/recursion-strings_subsequences.dir/build.make CMakeFiles/recursion-strings_subsequences.dir/build
+.PHONY : recursion-strings_subsequences/fast
 
 #=============================================================================
 # Target rules for targets named vectors
@@ -334,6 +360,33 @@ recursion/TowerOfhanoi.cpp.s:
 	$(MAKE) -f CMakeFiles/TowerOfhanoi.dir/build.make CMakeFiles/TowerOfhanoi.dir/recursion/TowerOfhanoi.cpp.s
 .PHONY : recursion/TowerOfhanoi.cpp.s
 
+recursion/recursion-all-combinations.o: recursion/recursion-all-combinations.cpp.o
+
+.PHONY : recursion/recursion-all-combinations.o
+
+# target to build an object file
+recursion/recursion-all-combinations.cpp.o:
+	$(MAKE) -f CMakeFiles/recursion-all-combinations.dir/build.make CMakeFiles/recursion-all-combinations.dir/recursion/recursion-all-combinations.cpp.o
+.PHONY : recursion/recursion-all-combinations.cpp.o
+
+recursion/recursion-all-combinations.i: recursion/recursion-all-combinations.cpp.i
+
+.PHONY : recursion/recursion-all-combinations.i
+
+# target to preprocess a source file
+recursion/recursion-all-combinations.cpp.i:
+	$(MAKE) -f CMakeFiles/recursion-all-combinations.dir/build.make CMakeFiles/recursion-all-combinations.dir/recursion/recursion-all-combinations.cpp.i
+.PHONY : recursion/recursion-all-combinations.cpp.i
+
+recursion/recursion-all-combinations.s: recursion/recursion-all-combinations.cpp.s
+
+.PHONY : recursion/recursion-all-combinations.s
+
+# target to generate assembly for a file
+recursion/recursion-all-combinations.cpp.s:
+	$(MAKE) -f CMakeFiles/recursion-all-combinations.dir/build.make CMakeFiles/recursion-all-combinations.dir/recursion/recursion-all-combinations.cpp.s
+.PHONY : recursion/recursion-all-combinations.cpp.s
+
 recursion/recursion-factorial.o: recursion/recursion-factorial.cpp.o
 
 .PHONY : recursion/recursion-factorial.o
@@ -387,6 +440,33 @@ recursion/recursion-power.s: recursion/recursion-power.cpp.s
 recursion/recursion-power.cpp.s:
 	$(MAKE) -f CMakeFiles/recursion-power.dir/build.make CMakeFiles/recursion-power.dir/recursion/recursion-power.cpp.s
 .PHONY : recursion/recursion-power.cpp.s
+
+recursion/recursion-strings_subsequences.o: recursion/recursion-strings_subsequences.cpp.o
+
+.PHONY : recursion/recursion-strings_subsequences.o
+
+# target to build an object file
+recursion/recursion-strings_subsequences.cpp.o:
+	$(MAKE) -f CMakeFiles/recursion-strings_subsequences.dir/build.make CMakeFiles/recursion-strings_subsequences.dir/recursion/recursion-strings_subsequences.cpp.o
+.PHONY : recursion/recursion-strings_subsequences.cpp.o
+
+recursion/recursion-strings_subsequences.i: recursion/recursion-strings_subsequences.cpp.i
+
+.PHONY : recursion/recursion-strings_subsequences.i
+
+# target to preprocess a source file
+recursion/recursion-strings_subsequences.cpp.i:
+	$(MAKE) -f CMakeFiles/recursion-strings_subsequences.dir/build.make CMakeFiles/recursion-strings_subsequences.dir/recursion/recursion-strings_subsequences.cpp.i
+.PHONY : recursion/recursion-strings_subsequences.cpp.i
+
+recursion/recursion-strings_subsequences.s: recursion/recursion-strings_subsequences.cpp.s
+
+.PHONY : recursion/recursion-strings_subsequences.s
+
+# target to generate assembly for a file
+recursion/recursion-strings_subsequences.cpp.s:
+	$(MAKE) -f CMakeFiles/recursion-strings_subsequences.dir/build.make CMakeFiles/recursion-strings_subsequences.dir/recursion/recursion-strings_subsequences.cpp.s
+.PHONY : recursion/recursion-strings_subsequences.cpp.s
 
 recursion/recursion1.o: recursion/recursion1.cpp.o
 
@@ -559,11 +639,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... replacing-duplicates-with-sum"
+	@echo "... recursion-all-combinations"
 	@echo "... remove-the-repeaters"
 	@echo "... recursionwitharrays"
 	@echo "... vector-rotation"
 	@echo "... main"
 	@echo "... TowerOfhanoi"
+	@echo "... recursion-strings_subsequences"
 	@echo "... vectors"
 	@echo "... mani"
 	@echo "... recursion-power"
@@ -578,12 +660,18 @@ help:
 	@echo "... recursion/TowerOfhanoi.o"
 	@echo "... recursion/TowerOfhanoi.i"
 	@echo "... recursion/TowerOfhanoi.s"
+	@echo "... recursion/recursion-all-combinations.o"
+	@echo "... recursion/recursion-all-combinations.i"
+	@echo "... recursion/recursion-all-combinations.s"
 	@echo "... recursion/recursion-factorial.o"
 	@echo "... recursion/recursion-factorial.i"
 	@echo "... recursion/recursion-factorial.s"
 	@echo "... recursion/recursion-power.o"
 	@echo "... recursion/recursion-power.i"
 	@echo "... recursion/recursion-power.s"
+	@echo "... recursion/recursion-strings_subsequences.o"
+	@echo "... recursion/recursion-strings_subsequences.i"
+	@echo "... recursion/recursion-strings_subsequences.s"
 	@echo "... recursion/recursion1.o"
 	@echo "... recursion/recursion1.i"
 	@echo "... recursion/recursion1.s"
