@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named string_subsequesces-2
+
+# Build rule for target.
+string_subsequesces-2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 string_subsequesces-2
+.PHONY : string_subsequesces-2
+
+# fast build rule for target.
+string_subsequesces-2/fast:
+	$(MAKE) -f CMakeFiles/string_subsequesces-2.dir/build.make CMakeFiles/string_subsequesces-2.dir/build
+.PHONY : string_subsequesces-2/fast
+
+#=============================================================================
 # Target rules for targets named matrix-multidimension
 
 # Build rule for target.
@@ -384,6 +397,33 @@ mani.s: mani.cpp.s
 mani.cpp.s:
 	$(MAKE) -f CMakeFiles/mani.dir/build.make CMakeFiles/mani.dir/mani.cpp.s
 .PHONY : mani.cpp.s
+
+recursion-grp2-jaate_hue_print/string_subsequesces-2.o: recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.o
+
+.PHONY : recursion-grp2-jaate_hue_print/string_subsequesces-2.o
+
+# target to build an object file
+recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.o:
+	$(MAKE) -f CMakeFiles/string_subsequesces-2.dir/build.make CMakeFiles/string_subsequesces-2.dir/recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.o
+.PHONY : recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.o
+
+recursion-grp2-jaate_hue_print/string_subsequesces-2.i: recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.i
+
+.PHONY : recursion-grp2-jaate_hue_print/string_subsequesces-2.i
+
+# target to preprocess a source file
+recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.i:
+	$(MAKE) -f CMakeFiles/string_subsequesces-2.dir/build.make CMakeFiles/string_subsequesces-2.dir/recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.i
+.PHONY : recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.i
+
+recursion-grp2-jaate_hue_print/string_subsequesces-2.s: recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.s
+
+.PHONY : recursion-grp2-jaate_hue_print/string_subsequesces-2.s
+
+# target to generate assembly for a file
+recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.s:
+	$(MAKE) -f CMakeFiles/string_subsequesces-2.dir/build.make CMakeFiles/string_subsequesces-2.dir/recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.s
+.PHONY : recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.s
 
 recursion/TowerOfhanoi.o: recursion/TowerOfhanoi.cpp.o
 
@@ -797,6 +837,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... string_subsequesces-2"
 	@echo "... rebuild_cache"
 	@echo "... matrix-multidimension"
 	@echo "... matrix-1step"
@@ -821,6 +862,9 @@ help:
 	@echo "... mani.o"
 	@echo "... mani.i"
 	@echo "... mani.s"
+	@echo "... recursion-grp2-jaate_hue_print/string_subsequesces-2.o"
+	@echo "... recursion-grp2-jaate_hue_print/string_subsequesces-2.i"
+	@echo "... recursion-grp2-jaate_hue_print/string_subsequesces-2.s"
 	@echo "... recursion/TowerOfhanoi.o"
 	@echo "... recursion/TowerOfhanoi.i"
 	@echo "... recursion/TowerOfhanoi.s"

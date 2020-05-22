@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/string_subsequesces-2.dir/DependInfo.cmake"
   "CMakeFiles/matrix-multidimension.dir/DependInfo.cmake"
   "CMakeFiles/matrix-1step.dir/DependInfo.cmake"
   "CMakeFiles/array-jumps-index.dir/DependInfo.cmake"
