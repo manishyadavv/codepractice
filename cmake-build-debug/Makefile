@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/manishyadav/Downloads/untitled1/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named matrix-multidimension
+
+# Build rule for target.
+matrix-multidimension: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrix-multidimension
+.PHONY : matrix-multidimension
+
+# fast build rule for target.
+matrix-multidimension/fast:
+	$(MAKE) -f CMakeFiles/matrix-multidimension.dir/build.make CMakeFiles/matrix-multidimension.dir/build
+.PHONY : matrix-multidimension/fast
+
+#=============================================================================
 # Target rules for targets named matrix-1step
 
 # Build rule for target.
@@ -122,6 +135,19 @@ matrix-1step: cmake_check_build_system
 matrix-1step/fast:
 	$(MAKE) -f CMakeFiles/matrix-1step.dir/build.make CMakeFiles/matrix-1step.dir/build
 .PHONY : matrix-1step/fast
+
+#=============================================================================
+# Target rules for targets named array-jumps-index
+
+# Build rule for target.
+array-jumps-index: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 array-jumps-index
+.PHONY : array-jumps-index
+
+# fast build rule for target.
+array-jumps-index/fast:
+	$(MAKE) -f CMakeFiles/array-jumps-index.dir/build.make CMakeFiles/array-jumps-index.dir/build
+.PHONY : array-jumps-index/fast
 
 #=============================================================================
 # Target rules for targets named stairs-recursion
@@ -386,6 +412,33 @@ recursion/TowerOfhanoi.cpp.s:
 	$(MAKE) -f CMakeFiles/TowerOfhanoi.dir/build.make CMakeFiles/TowerOfhanoi.dir/recursion/TowerOfhanoi.cpp.s
 .PHONY : recursion/TowerOfhanoi.cpp.s
 
+recursion/array-jumps-index.o: recursion/array-jumps-index.cpp.o
+
+.PHONY : recursion/array-jumps-index.o
+
+# target to build an object file
+recursion/array-jumps-index.cpp.o:
+	$(MAKE) -f CMakeFiles/array-jumps-index.dir/build.make CMakeFiles/array-jumps-index.dir/recursion/array-jumps-index.cpp.o
+.PHONY : recursion/array-jumps-index.cpp.o
+
+recursion/array-jumps-index.i: recursion/array-jumps-index.cpp.i
+
+.PHONY : recursion/array-jumps-index.i
+
+# target to preprocess a source file
+recursion/array-jumps-index.cpp.i:
+	$(MAKE) -f CMakeFiles/array-jumps-index.dir/build.make CMakeFiles/array-jumps-index.dir/recursion/array-jumps-index.cpp.i
+.PHONY : recursion/array-jumps-index.cpp.i
+
+recursion/array-jumps-index.s: recursion/array-jumps-index.cpp.s
+
+.PHONY : recursion/array-jumps-index.s
+
+# target to generate assembly for a file
+recursion/array-jumps-index.cpp.s:
+	$(MAKE) -f CMakeFiles/array-jumps-index.dir/build.make CMakeFiles/array-jumps-index.dir/recursion/array-jumps-index.cpp.s
+.PHONY : recursion/array-jumps-index.cpp.s
+
 recursion/matrix-1step.o: recursion/matrix-1step.cpp.o
 
 .PHONY : recursion/matrix-1step.o
@@ -412,6 +465,33 @@ recursion/matrix-1step.s: recursion/matrix-1step.cpp.s
 recursion/matrix-1step.cpp.s:
 	$(MAKE) -f CMakeFiles/matrix-1step.dir/build.make CMakeFiles/matrix-1step.dir/recursion/matrix-1step.cpp.s
 .PHONY : recursion/matrix-1step.cpp.s
+
+recursion/matrix-multidimension.o: recursion/matrix-multidimension.cpp.o
+
+.PHONY : recursion/matrix-multidimension.o
+
+# target to build an object file
+recursion/matrix-multidimension.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix-multidimension.dir/build.make CMakeFiles/matrix-multidimension.dir/recursion/matrix-multidimension.cpp.o
+.PHONY : recursion/matrix-multidimension.cpp.o
+
+recursion/matrix-multidimension.i: recursion/matrix-multidimension.cpp.i
+
+.PHONY : recursion/matrix-multidimension.i
+
+# target to preprocess a source file
+recursion/matrix-multidimension.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix-multidimension.dir/build.make CMakeFiles/matrix-multidimension.dir/recursion/matrix-multidimension.cpp.i
+.PHONY : recursion/matrix-multidimension.cpp.i
+
+recursion/matrix-multidimension.s: recursion/matrix-multidimension.cpp.s
+
+.PHONY : recursion/matrix-multidimension.s
+
+# target to generate assembly for a file
+recursion/matrix-multidimension.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix-multidimension.dir/build.make CMakeFiles/matrix-multidimension.dir/recursion/matrix-multidimension.cpp.s
+.PHONY : recursion/matrix-multidimension.cpp.s
 
 recursion/recursion-all-combinations.o: recursion/recursion-all-combinations.cpp.o
 
@@ -716,9 +796,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... matrix-multidimension"
 	@echo "... matrix-1step"
+	@echo "... array-jumps-index"
 	@echo "... stairs-recursion"
 	@echo "... replacing-duplicates-with-sum"
 	@echo "... recursion-all-combinations"
@@ -742,9 +824,15 @@ help:
 	@echo "... recursion/TowerOfhanoi.o"
 	@echo "... recursion/TowerOfhanoi.i"
 	@echo "... recursion/TowerOfhanoi.s"
+	@echo "... recursion/array-jumps-index.o"
+	@echo "... recursion/array-jumps-index.i"
+	@echo "... recursion/array-jumps-index.s"
 	@echo "... recursion/matrix-1step.o"
 	@echo "... recursion/matrix-1step.i"
 	@echo "... recursion/matrix-1step.s"
+	@echo "... recursion/matrix-multidimension.o"
+	@echo "... recursion/matrix-multidimension.i"
+	@echo "... recursion/matrix-multidimension.s"
 	@echo "... recursion/recursion-all-combinations.o"
 	@echo "... recursion/recursion-all-combinations.i"
 	@echo "... recursion/recursion-all-combinations.s"

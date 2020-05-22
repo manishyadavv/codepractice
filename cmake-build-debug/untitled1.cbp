@@ -17,6 +17,16 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
 				<Option type="4"/>
@@ -27,11 +37,43 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
+			<Target title="matrix-multidimension">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/matrix-multidimension" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
-				<Option type="4"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix-multidimension"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrix-multidimension/fast">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/matrix-multidimension" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix-multidimension/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -74,6 +116,48 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix-1step/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="array-jumps-index">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/array-jumps-index" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 array-jumps-index"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="array-jumps-index/fast">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/array-jumps-index" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 array-jumps-index/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -677,8 +761,14 @@
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/TowerOfhanoi.cpp">
 			<Option target="TowerOfhanoi"/>
 		</Unit>
+		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/array-jumps-index.cpp">
+			<Option target="array-jumps-index"/>
+		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/matrix-1step.cpp">
 			<Option target="matrix-1step"/>
+		</Unit>
+		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/matrix-multidimension.cpp">
+			<Option target="matrix-multidimension"/>
 		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/recursion-all-combinations.cpp">
 			<Option target="recursion-all-combinations"/>

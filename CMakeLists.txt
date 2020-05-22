@@ -26,3 +26,5 @@ add_executable(recursion-strings_subsequences recursion/recursion-strings_subseq
 add_executable(recursion-all-combinations recursion/recursion-all-combinations.cpp)
 add_executable(stairs-recursion recursion/stairs-recursion.cpp)
 add_executable(matrix-1step recursion/matrix-1step.cpp)
+add_executable(matrix-multidimension recursion/matrix-multidimension.cpp)
+add_executable(array-jumps-index recursion/array-jumps-index.cpp)
