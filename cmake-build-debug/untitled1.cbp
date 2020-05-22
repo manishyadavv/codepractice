@@ -37,6 +37,90 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="matrix-1step">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/matrix-1step" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix-1step"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="matrix-1step/fast">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/matrix-1step" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 matrix-1step/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stairs-recursion">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/stairs-recursion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 stairs-recursion"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stairs-recursion/fast">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/stairs-recursion" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 stairs-recursion/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="replacing-duplicates-with-sum">
 				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/replacing-duplicates-with-sum" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
@@ -593,6 +677,9 @@
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/TowerOfhanoi.cpp">
 			<Option target="TowerOfhanoi"/>
 		</Unit>
+		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/matrix-1step.cpp">
+			<Option target="matrix-1step"/>
+		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/recursion-all-combinations.cpp">
 			<Option target="recursion-all-combinations"/>
 		</Unit>
@@ -616,6 +703,9 @@
 		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/replacing-duplicates-with-sum.cpp">
 			<Option target="replacing-duplicates-with-sum"/>
+		</Unit>
+		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/stairs-recursion.cpp">
+			<Option target="stairs-recursion"/>
 		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion/vector-rotation.cpp">
 			<Option target="vector-rotation"/>

@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/manishyadav/Downloads/untitled1/mani.cpp
+/Users/manishyadav/Downloads/untitled1/recursion/stairs-recursion.cpp
 iostream
 -
-vector
+string
 -
+vector
+/Users/manishyadav/Downloads/untitled1/recursion/vector
 

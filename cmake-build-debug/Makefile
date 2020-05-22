@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named matrix-1step
+
+# Build rule for target.
+matrix-1step: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrix-1step
+.PHONY : matrix-1step
+
+# fast build rule for target.
+matrix-1step/fast:
+	$(MAKE) -f CMakeFiles/matrix-1step.dir/build.make CMakeFiles/matrix-1step.dir/build
+.PHONY : matrix-1step/fast
+
+#=============================================================================
+# Target rules for targets named stairs-recursion
+
+# Build rule for target.
+stairs-recursion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stairs-recursion
+.PHONY : stairs-recursion
+
+# fast build rule for target.
+stairs-recursion/fast:
+	$(MAKE) -f CMakeFiles/stairs-recursion.dir/build.make CMakeFiles/stairs-recursion.dir/build
+.PHONY : stairs-recursion/fast
+
+#=============================================================================
 # Target rules for targets named replacing-duplicates-with-sum
 
 # Build rule for target.
@@ -360,6 +386,33 @@ recursion/TowerOfhanoi.cpp.s:
 	$(MAKE) -f CMakeFiles/TowerOfhanoi.dir/build.make CMakeFiles/TowerOfhanoi.dir/recursion/TowerOfhanoi.cpp.s
 .PHONY : recursion/TowerOfhanoi.cpp.s
 
+recursion/matrix-1step.o: recursion/matrix-1step.cpp.o
+
+.PHONY : recursion/matrix-1step.o
+
+# target to build an object file
+recursion/matrix-1step.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix-1step.dir/build.make CMakeFiles/matrix-1step.dir/recursion/matrix-1step.cpp.o
+.PHONY : recursion/matrix-1step.cpp.o
+
+recursion/matrix-1step.i: recursion/matrix-1step.cpp.i
+
+.PHONY : recursion/matrix-1step.i
+
+# target to preprocess a source file
+recursion/matrix-1step.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix-1step.dir/build.make CMakeFiles/matrix-1step.dir/recursion/matrix-1step.cpp.i
+.PHONY : recursion/matrix-1step.cpp.i
+
+recursion/matrix-1step.s: recursion/matrix-1step.cpp.s
+
+.PHONY : recursion/matrix-1step.s
+
+# target to generate assembly for a file
+recursion/matrix-1step.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix-1step.dir/build.make CMakeFiles/matrix-1step.dir/recursion/matrix-1step.cpp.s
+.PHONY : recursion/matrix-1step.cpp.s
+
 recursion/recursion-all-combinations.o: recursion/recursion-all-combinations.cpp.o
 
 .PHONY : recursion/recursion-all-combinations.o
@@ -576,6 +629,33 @@ recursion/replacing-duplicates-with-sum.cpp.s:
 	$(MAKE) -f CMakeFiles/replacing-duplicates-with-sum.dir/build.make CMakeFiles/replacing-duplicates-with-sum.dir/recursion/replacing-duplicates-with-sum.cpp.s
 .PHONY : recursion/replacing-duplicates-with-sum.cpp.s
 
+recursion/stairs-recursion.o: recursion/stairs-recursion.cpp.o
+
+.PHONY : recursion/stairs-recursion.o
+
+# target to build an object file
+recursion/stairs-recursion.cpp.o:
+	$(MAKE) -f CMakeFiles/stairs-recursion.dir/build.make CMakeFiles/stairs-recursion.dir/recursion/stairs-recursion.cpp.o
+.PHONY : recursion/stairs-recursion.cpp.o
+
+recursion/stairs-recursion.i: recursion/stairs-recursion.cpp.i
+
+.PHONY : recursion/stairs-recursion.i
+
+# target to preprocess a source file
+recursion/stairs-recursion.cpp.i:
+	$(MAKE) -f CMakeFiles/stairs-recursion.dir/build.make CMakeFiles/stairs-recursion.dir/recursion/stairs-recursion.cpp.i
+.PHONY : recursion/stairs-recursion.cpp.i
+
+recursion/stairs-recursion.s: recursion/stairs-recursion.cpp.s
+
+.PHONY : recursion/stairs-recursion.s
+
+# target to generate assembly for a file
+recursion/stairs-recursion.cpp.s:
+	$(MAKE) -f CMakeFiles/stairs-recursion.dir/build.make CMakeFiles/stairs-recursion.dir/recursion/stairs-recursion.cpp.s
+.PHONY : recursion/stairs-recursion.cpp.s
+
 recursion/vector-rotation.o: recursion/vector-rotation.cpp.o
 
 .PHONY : recursion/vector-rotation.o
@@ -638,6 +718,8 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... matrix-1step"
+	@echo "... stairs-recursion"
 	@echo "... replacing-duplicates-with-sum"
 	@echo "... recursion-all-combinations"
 	@echo "... remove-the-repeaters"
@@ -660,6 +742,9 @@ help:
 	@echo "... recursion/TowerOfhanoi.o"
 	@echo "... recursion/TowerOfhanoi.i"
 	@echo "... recursion/TowerOfhanoi.s"
+	@echo "... recursion/matrix-1step.o"
+	@echo "... recursion/matrix-1step.i"
+	@echo "... recursion/matrix-1step.s"
 	@echo "... recursion/recursion-all-combinations.o"
 	@echo "... recursion/recursion-all-combinations.i"
 	@echo "... recursion/recursion-all-combinations.s"
@@ -684,6 +769,9 @@ help:
 	@echo "... recursion/replacing-duplicates-with-sum.o"
 	@echo "... recursion/replacing-duplicates-with-sum.i"
 	@echo "... recursion/replacing-duplicates-with-sum.s"
+	@echo "... recursion/stairs-recursion.o"
+	@echo "... recursion/stairs-recursion.i"
+	@echo "... recursion/stairs-recursion.s"
 	@echo "... recursion/vector-rotation.o"
 	@echo "... recursion/vector-rotation.i"
 	@echo "... recursion/vector-rotation.s"
