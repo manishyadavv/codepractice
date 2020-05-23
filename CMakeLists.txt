@@ -32,3 +32,4 @@ add_executable(string_subsequesces-2 recursion-grp2-jaate_hue_print/string_subse
 add_executable(stair-path2 recursion-grp2-jaate_hue_print/stair-path2.cpp)
 add_executable(keypad-2 recursion-grp2-jaate_hue_print/keypad-2.cpp)
 add_executable(matrix_one-2 recursion-grp2-jaate_hue_print/matrix_one-2.cpp)
+add_executable(matrix_two-2 recursion-grp2-jaate_hue_print/matrix_two-2.cpp)
