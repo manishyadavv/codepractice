@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/recursion-strings_subsequences.dir/recursion/recursion-strings_subsequences.cpp.o  -o recursion-strings_subsequences 

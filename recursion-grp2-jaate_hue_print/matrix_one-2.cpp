@@ -8,6 +8,8 @@
 #include "vector"
 using namespace std;
 
+//har baar ek ans string lete jaa rhe h usme ans concat krate jaa rhe hai
+//all approaches me
 
 void matrixone( int sr,int sc,int dr,int dc,string ans)
 {
