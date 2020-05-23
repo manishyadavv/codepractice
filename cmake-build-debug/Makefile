@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named matrix_one-2
+
+# Build rule for target.
+matrix_one-2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 matrix_one-2
+.PHONY : matrix_one-2
+
+# fast build rule for target.
+matrix_one-2/fast:
+	$(MAKE) -f CMakeFiles/matrix_one-2.dir/build.make CMakeFiles/matrix_one-2.dir/build
+.PHONY : matrix_one-2/fast
+
+#=============================================================================
 # Target rules for targets named string_subsequesces-2
 
 # Build rule for target.
@@ -450,6 +463,33 @@ recursion-grp2-jaate_hue_print/keypad-2.s: recursion-grp2-jaate_hue_print/keypad
 recursion-grp2-jaate_hue_print/keypad-2.cpp.s:
 	$(MAKE) -f CMakeFiles/keypad-2.dir/build.make CMakeFiles/keypad-2.dir/recursion-grp2-jaate_hue_print/keypad-2.cpp.s
 .PHONY : recursion-grp2-jaate_hue_print/keypad-2.cpp.s
+
+recursion-grp2-jaate_hue_print/matrix_one-2.o: recursion-grp2-jaate_hue_print/matrix_one-2.cpp.o
+
+.PHONY : recursion-grp2-jaate_hue_print/matrix_one-2.o
+
+# target to build an object file
+recursion-grp2-jaate_hue_print/matrix_one-2.cpp.o:
+	$(MAKE) -f CMakeFiles/matrix_one-2.dir/build.make CMakeFiles/matrix_one-2.dir/recursion-grp2-jaate_hue_print/matrix_one-2.cpp.o
+.PHONY : recursion-grp2-jaate_hue_print/matrix_one-2.cpp.o
+
+recursion-grp2-jaate_hue_print/matrix_one-2.i: recursion-grp2-jaate_hue_print/matrix_one-2.cpp.i
+
+.PHONY : recursion-grp2-jaate_hue_print/matrix_one-2.i
+
+# target to preprocess a source file
+recursion-grp2-jaate_hue_print/matrix_one-2.cpp.i:
+	$(MAKE) -f CMakeFiles/matrix_one-2.dir/build.make CMakeFiles/matrix_one-2.dir/recursion-grp2-jaate_hue_print/matrix_one-2.cpp.i
+.PHONY : recursion-grp2-jaate_hue_print/matrix_one-2.cpp.i
+
+recursion-grp2-jaate_hue_print/matrix_one-2.s: recursion-grp2-jaate_hue_print/matrix_one-2.cpp.s
+
+.PHONY : recursion-grp2-jaate_hue_print/matrix_one-2.s
+
+# target to generate assembly for a file
+recursion-grp2-jaate_hue_print/matrix_one-2.cpp.s:
+	$(MAKE) -f CMakeFiles/matrix_one-2.dir/build.make CMakeFiles/matrix_one-2.dir/recursion-grp2-jaate_hue_print/matrix_one-2.cpp.s
+.PHONY : recursion-grp2-jaate_hue_print/matrix_one-2.cpp.s
 
 recursion-grp2-jaate_hue_print/stair-path2.o: recursion-grp2-jaate_hue_print/stair-path2.cpp.o
 
@@ -917,6 +957,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... matrix_one-2"
 	@echo "... string_subsequesces-2"
 	@echo "... rebuild_cache"
 	@echo "... matrix-multidimension"
@@ -947,6 +988,9 @@ help:
 	@echo "... recursion-grp2-jaate_hue_print/keypad-2.o"
 	@echo "... recursion-grp2-jaate_hue_print/keypad-2.i"
 	@echo "... recursion-grp2-jaate_hue_print/keypad-2.s"
+	@echo "... recursion-grp2-jaate_hue_print/matrix_one-2.o"
+	@echo "... recursion-grp2-jaate_hue_print/matrix_one-2.i"
+	@echo "... recursion-grp2-jaate_hue_print/matrix_one-2.s"
 	@echo "... recursion-grp2-jaate_hue_print/stair-path2.o"
 	@echo "... recursion-grp2-jaate_hue_print/stair-path2.i"
 	@echo "... recursion-grp2-jaate_hue_print/stair-path2.s"
