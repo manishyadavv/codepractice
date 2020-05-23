@@ -55,12 +55,14 @@ CMAKE_BINARY_DIR = /Users/manishyadav/Downloads/untitled1/cmake-build-debug
 # The main recursive "all" target.
 all: CMakeFiles/string_subsequesces-2.dir/all
 all: CMakeFiles/matrix-multidimension.dir/all
+all: CMakeFiles/keypad-2.dir/all
 all: CMakeFiles/matrix-1step.dir/all
 all: CMakeFiles/array-jumps-index.dir/all
 all: CMakeFiles/stairs-recursion.dir/all
 all: CMakeFiles/replacing-duplicates-with-sum.dir/all
 all: CMakeFiles/recursion-all-combinations.dir/all
 all: CMakeFiles/remove-the-repeaters.dir/all
+all: CMakeFiles/stair-path2.dir/all
 all: CMakeFiles/recursionwitharrays.dir/all
 all: CMakeFiles/vector-rotation.dir/all
 all: CMakeFiles/main.dir/all
@@ -77,12 +79,14 @@ all: CMakeFiles/recursion1.dir/all
 # The main recursive "clean" target.
 clean: CMakeFiles/string_subsequesces-2.dir/clean
 clean: CMakeFiles/matrix-multidimension.dir/clean
+clean: CMakeFiles/keypad-2.dir/clean
 clean: CMakeFiles/matrix-1step.dir/clean
 clean: CMakeFiles/array-jumps-index.dir/clean
 clean: CMakeFiles/stairs-recursion.dir/clean
 clean: CMakeFiles/replacing-duplicates-with-sum.dir/clean
 clean: CMakeFiles/recursion-all-combinations.dir/clean
 clean: CMakeFiles/remove-the-repeaters.dir/clean
+clean: CMakeFiles/stair-path2.dir/clean
 clean: CMakeFiles/recursionwitharrays.dir/clean
 clean: CMakeFiles/vector-rotation.dir/clean
 clean: CMakeFiles/main.dir/clean
@@ -108,7 +112,7 @@ preinstall:
 CMakeFiles/string_subsequesces-2.dir/all:
 	$(MAKE) -f CMakeFiles/string_subsequesces-2.dir/build.make CMakeFiles/string_subsequesces-2.dir/depend
 	$(MAKE) -f CMakeFiles/string_subsequesces-2.dir/build.make CMakeFiles/string_subsequesces-2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target string_subsequesces-2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target string_subsequesces-2"
 .PHONY : CMakeFiles/string_subsequesces-2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -135,7 +139,7 @@ CMakeFiles/string_subsequesces-2.dir/clean:
 CMakeFiles/matrix-multidimension.dir/all:
 	$(MAKE) -f CMakeFiles/matrix-multidimension.dir/build.make CMakeFiles/matrix-multidimension.dir/depend
 	$(MAKE) -f CMakeFiles/matrix-multidimension.dir/build.make CMakeFiles/matrix-multidimension.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target matrix-multidimension"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target matrix-multidimension"
 .PHONY : CMakeFiles/matrix-multidimension.dir/all
 
 # Build rule for subdir invocation for target.
@@ -156,13 +160,40 @@ CMakeFiles/matrix-multidimension.dir/clean:
 .PHONY : CMakeFiles/matrix-multidimension.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/keypad-2.dir
+
+# All Build rule for target.
+CMakeFiles/keypad-2.dir/all:
+	$(MAKE) -f CMakeFiles/keypad-2.dir/build.make CMakeFiles/keypad-2.dir/depend
+	$(MAKE) -f CMakeFiles/keypad-2.dir/build.make CMakeFiles/keypad-2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target keypad-2"
+.PHONY : CMakeFiles/keypad-2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/keypad-2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/keypad-2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/keypad-2.dir/rule
+
+# Convenience name for target.
+keypad-2: CMakeFiles/keypad-2.dir/rule
+
+.PHONY : keypad-2
+
+# clean rule for target.
+CMakeFiles/keypad-2.dir/clean:
+	$(MAKE) -f CMakeFiles/keypad-2.dir/build.make CMakeFiles/keypad-2.dir/clean
+.PHONY : CMakeFiles/keypad-2.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/matrix-1step.dir
 
 # All Build rule for target.
 CMakeFiles/matrix-1step.dir/all:
 	$(MAKE) -f CMakeFiles/matrix-1step.dir/build.make CMakeFiles/matrix-1step.dir/depend
 	$(MAKE) -f CMakeFiles/matrix-1step.dir/build.make CMakeFiles/matrix-1step.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target matrix-1step"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target matrix-1step"
 .PHONY : CMakeFiles/matrix-1step.dir/all
 
 # Build rule for subdir invocation for target.
@@ -216,7 +247,7 @@ CMakeFiles/array-jumps-index.dir/clean:
 CMakeFiles/stairs-recursion.dir/all:
 	$(MAKE) -f CMakeFiles/stairs-recursion.dir/build.make CMakeFiles/stairs-recursion.dir/depend
 	$(MAKE) -f CMakeFiles/stairs-recursion.dir/build.make CMakeFiles/stairs-recursion.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target stairs-recursion"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target stairs-recursion"
 .PHONY : CMakeFiles/stairs-recursion.dir/all
 
 # Build rule for subdir invocation for target.
@@ -243,7 +274,7 @@ CMakeFiles/stairs-recursion.dir/clean:
 CMakeFiles/replacing-duplicates-with-sum.dir/all:
 	$(MAKE) -f CMakeFiles/replacing-duplicates-with-sum.dir/build.make CMakeFiles/replacing-duplicates-with-sum.dir/depend
 	$(MAKE) -f CMakeFiles/replacing-duplicates-with-sum.dir/build.make CMakeFiles/replacing-duplicates-with-sum.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target replacing-duplicates-with-sum"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=29,30 "Built target replacing-duplicates-with-sum"
 .PHONY : CMakeFiles/replacing-duplicates-with-sum.dir/all
 
 # Build rule for subdir invocation for target.
@@ -270,7 +301,7 @@ CMakeFiles/replacing-duplicates-with-sum.dir/clean:
 CMakeFiles/recursion-all-combinations.dir/all:
 	$(MAKE) -f CMakeFiles/recursion-all-combinations.dir/build.make CMakeFiles/recursion-all-combinations.dir/depend
 	$(MAKE) -f CMakeFiles/recursion-all-combinations.dir/build.make CMakeFiles/recursion-all-combinations.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target recursion-all-combinations"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target recursion-all-combinations"
 .PHONY : CMakeFiles/recursion-all-combinations.dir/all
 
 # Build rule for subdir invocation for target.
@@ -297,7 +328,7 @@ CMakeFiles/recursion-all-combinations.dir/clean:
 CMakeFiles/remove-the-repeaters.dir/all:
 	$(MAKE) -f CMakeFiles/remove-the-repeaters.dir/build.make CMakeFiles/remove-the-repeaters.dir/depend
 	$(MAKE) -f CMakeFiles/remove-the-repeaters.dir/build.make CMakeFiles/remove-the-repeaters.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target remove-the-repeaters"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=27,28 "Built target remove-the-repeaters"
 .PHONY : CMakeFiles/remove-the-repeaters.dir/all
 
 # Build rule for subdir invocation for target.
@@ -318,13 +349,40 @@ CMakeFiles/remove-the-repeaters.dir/clean:
 .PHONY : CMakeFiles/remove-the-repeaters.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/stair-path2.dir
+
+# All Build rule for target.
+CMakeFiles/stair-path2.dir/all:
+	$(MAKE) -f CMakeFiles/stair-path2.dir/build.make CMakeFiles/stair-path2.dir/depend
+	$(MAKE) -f CMakeFiles/stair-path2.dir/build.make CMakeFiles/stair-path2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=31,32 "Built target stair-path2"
+.PHONY : CMakeFiles/stair-path2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/stair-path2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/stair-path2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/stair-path2.dir/rule
+
+# Convenience name for target.
+stair-path2: CMakeFiles/stair-path2.dir/rule
+
+.PHONY : stair-path2
+
+# clean rule for target.
+CMakeFiles/stair-path2.dir/clean:
+	$(MAKE) -f CMakeFiles/stair-path2.dir/build.make CMakeFiles/stair-path2.dir/clean
+.PHONY : CMakeFiles/stair-path2.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/recursionwitharrays.dir
 
 # All Build rule for target.
 CMakeFiles/recursionwitharrays.dir/all:
 	$(MAKE) -f CMakeFiles/recursionwitharrays.dir/build.make CMakeFiles/recursionwitharrays.dir/depend
 	$(MAKE) -f CMakeFiles/recursionwitharrays.dir/build.make CMakeFiles/recursionwitharrays.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target recursionwitharrays"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=25,26 "Built target recursionwitharrays"
 .PHONY : CMakeFiles/recursionwitharrays.dir/all
 
 # Build rule for subdir invocation for target.
@@ -351,7 +409,7 @@ CMakeFiles/recursionwitharrays.dir/clean:
 CMakeFiles/vector-rotation.dir/all:
 	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/depend
 	$(MAKE) -f CMakeFiles/vector-rotation.dir/build.make CMakeFiles/vector-rotation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=33,34 "Built target vector-rotation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=37,38 "Built target vector-rotation"
 .PHONY : CMakeFiles/vector-rotation.dir/all
 
 # Build rule for subdir invocation for target.
@@ -378,7 +436,7 @@ CMakeFiles/vector-rotation.dir/clean:
 CMakeFiles/main.dir/all:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target main"
 .PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -432,7 +490,7 @@ CMakeFiles/TowerOfhanoi.dir/clean:
 CMakeFiles/recursion-strings_subsequences.dir/all:
 	$(MAKE) -f CMakeFiles/recursion-strings_subsequences.dir/build.make CMakeFiles/recursion-strings_subsequences.dir/depend
 	$(MAKE) -f CMakeFiles/recursion-strings_subsequences.dir/build.make CMakeFiles/recursion-strings_subsequences.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target recursion-strings_subsequences"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target recursion-strings_subsequences"
 .PHONY : CMakeFiles/recursion-strings_subsequences.dir/all
 
 # Build rule for subdir invocation for target.
@@ -459,7 +517,7 @@ CMakeFiles/recursion-strings_subsequences.dir/clean:
 CMakeFiles/vectors.dir/all:
 	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/depend
 	$(MAKE) -f CMakeFiles/vectors.dir/build.make CMakeFiles/vectors.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=35,36 "Built target vectors"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=39,40 "Built target vectors"
 .PHONY : CMakeFiles/vectors.dir/all
 
 # Build rule for subdir invocation for target.
@@ -486,7 +544,7 @@ CMakeFiles/vectors.dir/clean:
 CMakeFiles/mani.dir/all:
 	$(MAKE) -f CMakeFiles/mani.dir/build.make CMakeFiles/mani.dir/depend
 	$(MAKE) -f CMakeFiles/mani.dir/build.make CMakeFiles/mani.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target mani"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target mani"
 .PHONY : CMakeFiles/mani.dir/all
 
 # Build rule for subdir invocation for target.
@@ -513,7 +571,7 @@ CMakeFiles/mani.dir/clean:
 CMakeFiles/recursion-power.dir/all:
 	$(MAKE) -f CMakeFiles/recursion-power.dir/build.make CMakeFiles/recursion-power.dir/depend
 	$(MAKE) -f CMakeFiles/recursion-power.dir/build.make CMakeFiles/recursion-power.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target recursion-power"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=19,20 "Built target recursion-power"
 .PHONY : CMakeFiles/recursion-power.dir/all
 
 # Build rule for subdir invocation for target.
@@ -540,7 +598,7 @@ CMakeFiles/recursion-power.dir/clean:
 CMakeFiles/recursion-factorial.dir/all:
 	$(MAKE) -f CMakeFiles/recursion-factorial.dir/build.make CMakeFiles/recursion-factorial.dir/depend
 	$(MAKE) -f CMakeFiles/recursion-factorial.dir/build.make CMakeFiles/recursion-factorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target recursion-factorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target recursion-factorial"
 .PHONY : CMakeFiles/recursion-factorial.dir/all
 
 # Build rule for subdir invocation for target.
@@ -567,7 +625,7 @@ CMakeFiles/recursion-factorial.dir/clean:
 CMakeFiles/recursion1.dir/all:
 	$(MAKE) -f CMakeFiles/recursion1.dir/build.make CMakeFiles/recursion1.dir/depend
 	$(MAKE) -f CMakeFiles/recursion1.dir/build.make CMakeFiles/recursion1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target recursion1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/manishyadav/Downloads/untitled1/cmake-build-debug/CMakeFiles --progress-num=23,24 "Built target recursion1"
 .PHONY : CMakeFiles/recursion1.dir/all
 
 # Build rule for subdir invocation for target.

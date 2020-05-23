@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/manishyadav/Downloads/untitled1/recursion-grp2-jaate_hue_print/keypad-2.cpp
+iostream
+-
+string
+-
+vector
+/Users/manishyadav/Downloads/untitled1/recursion-grp2-jaate_hue_print/vector
+

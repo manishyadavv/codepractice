@@ -121,6 +121,48 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="keypad-2">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/keypad-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 keypad-2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="keypad-2/fast">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/keypad-2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 keypad-2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="matrix-1step">
 				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/matrix-1step" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
@@ -368,6 +410,48 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 remove-the-repeaters/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stair-path2">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/stair-path2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 stair-path2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="stair-path2/fast">
+				<Option output="/Users/manishyadav/Downloads/untitled1/cmake-build-debug/stair-path2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/manishyadav/Downloads/untitled1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 stair-path2/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/manishyadav/Downloads/untitled1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -799,6 +883,12 @@
 		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/mani.cpp">
 			<Option target="mani"/>
+		</Unit>
+		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion-grp2-jaate_hue_print/keypad-2.cpp">
+			<Option target="keypad-2"/>
+		</Unit>
+		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion-grp2-jaate_hue_print/stair-path2.cpp">
+			<Option target="stair-path2"/>
 		</Unit>
 		<Unit filename="/Users/manishyadav/Downloads/untitled1/recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp">
 			<Option target="string_subsequesces-2"/>

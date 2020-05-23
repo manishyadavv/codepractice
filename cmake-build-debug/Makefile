@@ -137,6 +137,19 @@ matrix-multidimension/fast:
 .PHONY : matrix-multidimension/fast
 
 #=============================================================================
+# Target rules for targets named keypad-2
+
+# Build rule for target.
+keypad-2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 keypad-2
+.PHONY : keypad-2
+
+# fast build rule for target.
+keypad-2/fast:
+	$(MAKE) -f CMakeFiles/keypad-2.dir/build.make CMakeFiles/keypad-2.dir/build
+.PHONY : keypad-2/fast
+
+#=============================================================================
 # Target rules for targets named matrix-1step
 
 # Build rule for target.
@@ -213,6 +226,19 @@ remove-the-repeaters: cmake_check_build_system
 remove-the-repeaters/fast:
 	$(MAKE) -f CMakeFiles/remove-the-repeaters.dir/build.make CMakeFiles/remove-the-repeaters.dir/build
 .PHONY : remove-the-repeaters/fast
+
+#=============================================================================
+# Target rules for targets named stair-path2
+
+# Build rule for target.
+stair-path2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stair-path2
+.PHONY : stair-path2
+
+# fast build rule for target.
+stair-path2/fast:
+	$(MAKE) -f CMakeFiles/stair-path2.dir/build.make CMakeFiles/stair-path2.dir/build
+.PHONY : stair-path2/fast
 
 #=============================================================================
 # Target rules for targets named recursionwitharrays
@@ -397,6 +423,60 @@ mani.s: mani.cpp.s
 mani.cpp.s:
 	$(MAKE) -f CMakeFiles/mani.dir/build.make CMakeFiles/mani.dir/mani.cpp.s
 .PHONY : mani.cpp.s
+
+recursion-grp2-jaate_hue_print/keypad-2.o: recursion-grp2-jaate_hue_print/keypad-2.cpp.o
+
+.PHONY : recursion-grp2-jaate_hue_print/keypad-2.o
+
+# target to build an object file
+recursion-grp2-jaate_hue_print/keypad-2.cpp.o:
+	$(MAKE) -f CMakeFiles/keypad-2.dir/build.make CMakeFiles/keypad-2.dir/recursion-grp2-jaate_hue_print/keypad-2.cpp.o
+.PHONY : recursion-grp2-jaate_hue_print/keypad-2.cpp.o
+
+recursion-grp2-jaate_hue_print/keypad-2.i: recursion-grp2-jaate_hue_print/keypad-2.cpp.i
+
+.PHONY : recursion-grp2-jaate_hue_print/keypad-2.i
+
+# target to preprocess a source file
+recursion-grp2-jaate_hue_print/keypad-2.cpp.i:
+	$(MAKE) -f CMakeFiles/keypad-2.dir/build.make CMakeFiles/keypad-2.dir/recursion-grp2-jaate_hue_print/keypad-2.cpp.i
+.PHONY : recursion-grp2-jaate_hue_print/keypad-2.cpp.i
+
+recursion-grp2-jaate_hue_print/keypad-2.s: recursion-grp2-jaate_hue_print/keypad-2.cpp.s
+
+.PHONY : recursion-grp2-jaate_hue_print/keypad-2.s
+
+# target to generate assembly for a file
+recursion-grp2-jaate_hue_print/keypad-2.cpp.s:
+	$(MAKE) -f CMakeFiles/keypad-2.dir/build.make CMakeFiles/keypad-2.dir/recursion-grp2-jaate_hue_print/keypad-2.cpp.s
+.PHONY : recursion-grp2-jaate_hue_print/keypad-2.cpp.s
+
+recursion-grp2-jaate_hue_print/stair-path2.o: recursion-grp2-jaate_hue_print/stair-path2.cpp.o
+
+.PHONY : recursion-grp2-jaate_hue_print/stair-path2.o
+
+# target to build an object file
+recursion-grp2-jaate_hue_print/stair-path2.cpp.o:
+	$(MAKE) -f CMakeFiles/stair-path2.dir/build.make CMakeFiles/stair-path2.dir/recursion-grp2-jaate_hue_print/stair-path2.cpp.o
+.PHONY : recursion-grp2-jaate_hue_print/stair-path2.cpp.o
+
+recursion-grp2-jaate_hue_print/stair-path2.i: recursion-grp2-jaate_hue_print/stair-path2.cpp.i
+
+.PHONY : recursion-grp2-jaate_hue_print/stair-path2.i
+
+# target to preprocess a source file
+recursion-grp2-jaate_hue_print/stair-path2.cpp.i:
+	$(MAKE) -f CMakeFiles/stair-path2.dir/build.make CMakeFiles/stair-path2.dir/recursion-grp2-jaate_hue_print/stair-path2.cpp.i
+.PHONY : recursion-grp2-jaate_hue_print/stair-path2.cpp.i
+
+recursion-grp2-jaate_hue_print/stair-path2.s: recursion-grp2-jaate_hue_print/stair-path2.cpp.s
+
+.PHONY : recursion-grp2-jaate_hue_print/stair-path2.s
+
+# target to generate assembly for a file
+recursion-grp2-jaate_hue_print/stair-path2.cpp.s:
+	$(MAKE) -f CMakeFiles/stair-path2.dir/build.make CMakeFiles/stair-path2.dir/recursion-grp2-jaate_hue_print/stair-path2.cpp.s
+.PHONY : recursion-grp2-jaate_hue_print/stair-path2.cpp.s
 
 recursion-grp2-jaate_hue_print/string_subsequesces-2.o: recursion-grp2-jaate_hue_print/string_subsequesces-2.cpp.o
 
@@ -840,12 +920,14 @@ help:
 	@echo "... string_subsequesces-2"
 	@echo "... rebuild_cache"
 	@echo "... matrix-multidimension"
+	@echo "... keypad-2"
 	@echo "... matrix-1step"
 	@echo "... array-jumps-index"
 	@echo "... stairs-recursion"
 	@echo "... replacing-duplicates-with-sum"
 	@echo "... recursion-all-combinations"
 	@echo "... remove-the-repeaters"
+	@echo "... stair-path2"
 	@echo "... recursionwitharrays"
 	@echo "... vector-rotation"
 	@echo "... main"
@@ -862,6 +944,12 @@ help:
 	@echo "... mani.o"
 	@echo "... mani.i"
 	@echo "... mani.s"
+	@echo "... recursion-grp2-jaate_hue_print/keypad-2.o"
+	@echo "... recursion-grp2-jaate_hue_print/keypad-2.i"
+	@echo "... recursion-grp2-jaate_hue_print/keypad-2.s"
+	@echo "... recursion-grp2-jaate_hue_print/stair-path2.o"
+	@echo "... recursion-grp2-jaate_hue_print/stair-path2.i"
+	@echo "... recursion-grp2-jaate_hue_print/stair-path2.s"
 	@echo "... recursion-grp2-jaate_hue_print/string_subsequesces-2.o"
 	@echo "... recursion-grp2-jaate_hue_print/string_subsequesces-2.i"
 	@echo "... recursion-grp2-jaate_hue_print/string_subsequesces-2.s"
