@@ -1,33 +1,19 @@
-// { Driver Code Starts
+
 #include<iostream>
 #include<string>
-#include "vector"
+#include <unordered_map>
+
 using namespace std;
 
-void  printSpace(char str[]);
 
-int main()
+int main ()
+
 {
-    int T;
-    cin>>T;
-    while(T--)
-    {
-        char str[10000];
-        cin>>str;
-        printSpace(str);
-        cout<<endl;
-    }
+    string s2;
+    string s1="manis";
+    s2=s1;
 
-}
-// } Driver Code Ends
+    cout<<&s1<<endl;
+    cout<<&s2;
 
-
-/*You have to complete this function*/
-void  printSpace(char str[])
-{
-    char ch=str[0];
-
-
-
-//Your code here
 }

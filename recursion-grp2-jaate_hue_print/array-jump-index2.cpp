@@ -27,8 +27,6 @@ void array_jump(int src,int dst,string ans,vector<int> v1)
         array_jump(src+step,dst,ans+to_string(step),v1);
     }
 
-
-
 }
 
 
