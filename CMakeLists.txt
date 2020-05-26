@@ -37,3 +37,5 @@ add_executable(array-jump-index2 recursion-grp2-jaate_hue_print/array-jump-index
 add_executable(flood-fill BADE-SAWAAL/flood-fill.cpp)
 add_executable(permu_obj_in_boxes BADE-SAWAAL/permu_obj_in_boxes.cpp)
 add_executable(combination2_B_at_levels BADE-SAWAAL/combination2_B_at_levels.cpp)
+add_executable(permutaion2_B_at_levels BADE-SAWAAL/permutaion2_B_at_levels.cpp)
+add_executable(combination1_obj_in_boxes BADE-SAWAAL/combination1_obj_in_boxes.cpp)
