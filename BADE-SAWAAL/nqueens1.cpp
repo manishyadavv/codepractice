@@ -11,7 +11,8 @@ using namespace std;
 static int counter=0;
 
 //cq=current queen
-void nqueen1(vector<vector<bool>>& chess,int cq,string asf)
+//lqi last queen i last queen j
+void nqueen1(vector<vector<bool>>& chess,int cq,int lqi,int lqj,string asf)
 {
 
     if(cq==chess.size())
@@ -23,14 +24,14 @@ void nqueen1(vector<vector<bool>>& chess,int cq,string asf)
 
 
 
-    for(int i=0;i<chess.size();i++)
+    for(int i=lqi;i<chess.size();i++)
     {
-        for(int j=0;j<chess[0].size();j++)
+        for(int j=(i==lqi?lqj+1:0);j<chess[0].size();j++)
         {
             if(chess[i][j]==false)
             {
                 chess[i][j]=true;
-                nqueen1(chess,cq+1,asf+to_string(i)+to_string(j)+"-");
+                nqueen1(chess,cq+1,i,j,asf+to_string(i)+to_string(j)+"-");
                 chess[i][j]=false;
             }
         }
@@ -44,7 +45,7 @@ void nqueen1(vector<vector<bool>>& chess,int cq,string asf)
 int main()
 {
     vector<vector<bool>> chess (4,vector<bool>(4,false));
-    nqueen1(chess,0,"");
+    nqueen1(chess,0,0,-1,"");
     return 0;
 
 }
