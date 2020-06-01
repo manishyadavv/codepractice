@@ -42,3 +42,4 @@ add_executable(combination1_obj_in_boxes BADE-SAWAAL/combination1_obj_in_boxes.c
 add_executable(Coins_perm_comb BADE-SAWAAL/Coins_perm_comb.cpp)
 add_executable(nqueens1 BADE-SAWAAL/nqueens1.cpp)
 add_executable(NQueen_Problem GFG{trying}/NQueen_Problem.cpp)
+add_executable(N_Knights1 BADE-SAWAAL/N_Knights1.cpp)
