@@ -4,10 +4,13 @@
 
 //https://practice.geeksforgeeks.org/problems/n-queen-problem/0
 
+//not optimal it is takes soo much time
 
 #include<iostream>
 #include<string>
 #include "vector"
+#include "time.h"
+#include "iomanip"
 using namespace std;
 
 
@@ -93,8 +96,15 @@ void nqueen1(vector<vector<bool>>& chess,int cq,int lqi,int lqj,string asf)
 int main()
 {
 
+    time_t start, end;
+
+    time(&start);
+    cin.tie(0);
+    cout.tie(0);
+    ios_base::sync_with_stdio(false);
 
     int t;
+
     cin>>t;
     while(t--)
     {
@@ -103,8 +113,13 @@ int main()
         vector<vector<bool>> chess (n,vector<bool>(n,false));
         nqueen1(chess,0,0,-1,"");
     }
+    time(&end);
 
 
+    double time_taken = double(end - start);
+    cout << "Time taken by program is : " << fixed
+         << time_taken << setprecision(5);
+    cout << " sec " << endl;
     return 0;
 
 }

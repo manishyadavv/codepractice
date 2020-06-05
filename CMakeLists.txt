@@ -47,3 +47,6 @@ add_executable(N_knights_boxes_at_levels BADE-SAWAAL/N_knights_boxes_at_levels.c
 add_executable(nqueens_boxes_at_levels BADE-SAWAAL/nqueens_boxes_at_levels.cpp)
 add_executable(encodings_1123_to_aabc BADE-SAWAAL/encodings_1123_to_aabc.cpp)
 add_executable(WordBreak_mango BADE-SAWAAL/WordBreak_mango.cpp)
+add_executable(Rat_in_maze1 GFG{trying}/Rat_in_maze1.cpp)
+add_executable(total_num_of_strings GFG{trying}/total_num_of_strings.cpp)
+add_executable(floodfill-gfg GFG{trying}/floodfill-gfg.cpp)
