@@ -2,6 +2,7 @@
 // Created by MANISH YADAV on 27/05/20.
 //
 
+//https://practice.geeksforgeeks.org/problems/combination-sum/0
 
 #include<iostream>
 #include<string>
@@ -68,11 +69,11 @@ void coin_change_comb(int amt,string asf,int lci,vector<int>& v1)
 
 int main()
 {
-    vector<int> v1 {2,3,5,6};
-    coin_change_perm(7,"",v1);
+    vector<int> v1 {2,5,6,7};
+    coin_change_perm(16,"",v1);
     //below one is my approach
     //Coin_perm(0,7,"");
     cout<<"combination"<<endl;
-    coin_change_comb(7,"",0,v1);
+    coin_change_comb(16,"",0,v1);
     return 0;
 }
