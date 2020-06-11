@@ -1,51 +1,47 @@
-
-#include<iostream>
-#include<string>
-#include "vector"
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
 using namespace std;
-//GFG PRINT COMB2 (HARD) QUESTION ALMOST DONE
-void printComb(int sum,string ans,int li,vector<int>& v1,bool arr[])
-{
-    if(sum==0)
-    {
-        cout<<"("<<ans<<")";
-        return;
-    }
 
-    for(int i=li+1;i<v1.size();i++)
-    {
-        if(v1[i]<=sum &&arr[i]==false)
-
-        {   arr[i]=true;
-            printComb(sum-v1[i],ans+to_string(v1[i]),i,v1,arr);
-            arr[i]=false;
-        }
-    }
-
-}
 int main() {
 
-    int t,n,inp,sum;
+    int t,n,num,flag;
+    vector<int> v1;
     cin>>t;
     while(t--)
     {
+        flag=0;
         cin>>n;
 
-        vector<int> v1;
         for(int i=0;i<n;i++)
         {
-            cin>>inp;
-            v1.push_back(inp);
+            cin>>num;
+            v1.push_back(num);
         }
-        //sort(v1.begin(),v1.end());
-        cin>>sum;
-       bool arr[n];
-       for(int i=0;i<n;i++)
-       {
-           arr[i]=false;
-       }
-        printComb(sum,"",0,v1,arr);
-        cout<<endl;
+
+
+        for(int i=0;i<n-2;i++)
+        {
+            sort(v1.begin()+i,v1.begin()+i+3);
+
+            if(is_sorted(v1.begin(),v1.end()))
+            {
+                flag=1;
+                break;
+            }
+
+
+        }
+
+
+        if(flag)
+        {
+            cout<<"YES"<<endl;
+        }
+        else
+            cout<<"NO"<<endl;
     }
     return 0;
 }
