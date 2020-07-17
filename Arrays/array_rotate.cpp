@@ -23,7 +23,7 @@ void reverse(int* arr,int l ,int r)
 
     while(l<r)
     {
-        swap(arr[l],arr[r]);
+        swap(&arr[l],&arr[r]);
         l++;
         r--;
     }
