@@ -49,15 +49,61 @@ void kadane(vector<int>& v1,int n)
         }
     }
 
-    cout<<bestsum<<endl<<"From "<<beststart<<endl<<"To "<<bestend;
+    cout<<bestsum<<endl<<"From "<<beststart<<endl<<"To "<<bestend<<endl;
+
+    for(int i=beststart;i<=bestend;i++)
+    {
+        cout<<v1[i]<<" ";
+    }
+
+    cout<<endl;
 
 }
 
 
 int main ()
 {
-    vector <int> arr{2,4,3,-6,-4,1,7,-2,6,4,-3,2,3,-9,-6,-4,4,8};
-    kadane(arr,18);
+    vector <int> arr1{2,4,3,-6,-4,1,7,-2,6,4,-3,2,3,-9,-6,-4,4,8};
+    kadane(arr1,18);
+
+    //sir's approach
+
+    int arr[] = {2,4,3,-6,-4,1,7,-2,6,4,-3,2,3,-9,-6,-4,4,8};
+    int ci = 0;
+    int cj = 0;
+    int cs = arr[0];
+
+    int bi = 0;
+    int bj = 0;
+    int bs = arr[0];
+
+    for(int i = 1; i < 18; i++)
+    {
+        if(cs > 0)
+        {
+            cj++;
+            cs = cs + arr[i];
+        }
+        else
+        {
+            ci = i;
+            cj = i;
+            cs = arr[i];
+        }
+
+        if(cs > bs)
+        {
+            bi = ci;
+            bj = cj;
+            bs = cs;
+        }
+    }
+
+
+    for(int i = bi; i <= bj; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
 
 }
 
