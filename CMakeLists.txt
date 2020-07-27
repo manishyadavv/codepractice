@@ -61,3 +61,4 @@ add_executable(Combination_sum_coin_change_like GFG{trying}/Combination_sum_coin
 add_executable(array_rotate Arrays/array_rotate.cpp)
 add_executable(Kadanes_algo Arrays/Kadanes_algo.cpp)
 add_executable(Basic_graph GRAPHS/Basic_graph.cpp)
+add_executable(graph_HasPath GRAPHS/graph_HasPath.cpp)
