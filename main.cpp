@@ -1,50 +1,94 @@
-#include <iostream>
+
+#include<iostream>
+#include<string>
+#include "vector"
+using namespace std;
+//
+// Created by MANISH YADAV on 23/05/20.
+//
+
+
+#include<iostream>
+#include<string>
+#include "vector"
 using namespace std;
 
-class node
+
+
+vector<string> ptm(int sr,int sc,int dr,int dc)
 {
-public:
-    int data;
-    node* left;
-    node* right;
 
-    node(int d )
+    if(sr==dr&&sc==dc)
     {
-        data=d;
-        left=NULL;
-        right=NULL;
-
+        vector<string> v1;
+        v1.push_back("");
+        return v1;
+    }
+    vector<string> v1,v2,ans;
+    if(sr<dr)
+    {
+        v1=ptm(sr+1,sc,dr,dc);
     }
 
-
-};
-
-node* BuildTree()
-{int d;
-cin>>d;
-if(d==-1)
-{
-    return NULL;
-}
-   node* root = new node(d);
-    root->left=BuildTree();
-    root->right=BuildTree();
-return root;
-
-}
-void print(node* root)
-{
-    if(root==NULL)
+    if(sc<dc)
     {
-        return;
+        v2=ptm(sr,sc+1,dr,dc);
     }
-    cout<<root->data<<" ";
-    print(root->left);
-    print(root->right);
+
+    for(int i=0;i<v1.size();i++)
+    {
+        string str=v1[i];
+        ans.push_back("H"+str);
+    }
+    for(int i=0;i<v2.size();i++)
+    {
+        string str=v2[i];
+        ans.push_back("V"+str);
+    }
+    return ans;
+}
+
+
+vector<string> getSafePath(vector<string> journeys)
+{
+    vector<string> res;
+    for(int i=0;i<journeys.size();i++) {
+        string s = journeys[i];
+
+        int x= s[0]-48;
+        int y=s[1]-48;
+        int k=s[2]-48;
+        vector<string> v1=ptm(0,0,x,y);
+        cout<<endl;
+        for (int i=0;i<v1.size();i++)
+        {
+            cout<<v1[i]<<" ";
+        }
+        cout<<endl;
+        sort(v1.begin(),v1.end());
+        for (int i=0;i<v1.size();i++)
+        {
+            cout<<v1[i]<<" ";
+        }
+        cout<<endl;
+        res.push_back(v1[k]);
+    }
+
+return res;
+
 
 }
-int main() {
-node* root = BuildTree();
-print(root);
-    return 0;
+
+int main()
+{
+    vector<string> journeys={"222","223"};
+
+    vector<string> aaaa=getSafePath(journeys);
+
+//    for (int i=0;i<aaaa.size();i++)
+//    {
+//        cout<<aaaa[i]<<" ";
+//    }
+
+
 }
