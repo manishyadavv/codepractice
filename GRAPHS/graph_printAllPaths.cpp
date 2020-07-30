@@ -5,6 +5,7 @@
 
 #include<iostream>
 #include<vector>
+#include<climits>
 using namespace std;
 
 
@@ -51,6 +52,69 @@ void display()
 }
 
 
+int sd=INT_MAX;
+string sdp;
+int ld=INT_MIN;
+string ldp;
+
+int cd=INT_MAX;
+string cdp;
+int fd=INT_MIN;
+string fdp;
+
+void printceilandfloor(int s,int d, vector<bool>& visited, string psf, int dsf,int factor)
+{
+    if(s==d)
+    {
+        psf=psf+to_string(d);
+        cout<<psf<<"-"<<dsf<<endl;
+
+    if(dsf<sd)
+    {
+        sd=dsf;
+        sdp=psf;
+    }
+    if(dsf>ld)
+    {
+        ld=dsf;
+        ldp=psf;
+    }
+
+    if(dsf>factor&&dsf<cd)
+    {
+        cd=dsf;
+        cdp=psf;
+    }
+    if(dsf<factor&&dsf>fd)
+    {
+        fd=dsf;
+        fdp=psf;
+    }
+
+
+        return;
+    }
+
+    visited[s]=true;//Node Pre
+
+    for(int n=0;n<graph[s].size();n++)
+    {
+        Edge ne=graph[s][n]; //here we are iterating over the all the objects jo padi hai s ke samne
+        //in adjency list
+
+        if(visited[ne.nbr]==false) {
+
+            psf+=to_string(s);//achaa tareeka string pass krne ka
+            printceilandfloor(ne.nbr, d, visited,psf,dsf+ne.wt,factor);
+            psf.erase(psf.length()-1,1);
+
+        }
+    }
+    visited[s]=false;//Node Post
+
+    return ;
+
+}
 
 
 void printallPath(int s,int d, vector<bool>& visited, string psf, int dsf)
@@ -103,13 +167,20 @@ int main()
     addEdge(4,5,3);
     addEdge(5,6,3);
     addEdge(4,6,8);
+    addEdge(2,5,5);
 
     //display();
     cout<<endl;
     vector<bool> visited(7,false);
 
-    printallPath(0,6,visited,"",0);
+    //printallPath(0,6,visited,"",0);
 
+    printceilandfloor(0,6,visited,"",0,45);
+
+    cout<<"Smallest Distance"<<sd<<"Path->"<<sdp<<endl;
+    cout<<"Largest Distance"<<ld<<"Path->"<<ldp<<endl;
+    cout<<"Ceil Distance"<<cd<<"Path->"<<cdp<<endl;
+    cout<<"Floor Distance"<<fd<<"Path->"<<fdp<<endl;
 
 
 
