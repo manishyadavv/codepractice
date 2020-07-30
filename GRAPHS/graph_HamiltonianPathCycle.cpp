@@ -54,13 +54,24 @@ void display()
 
 
 
-void hamiltonianPath(int s, vector<bool>& visited, string psf,int count)
+void hamiltonianPath(int s, vector<bool>& visited, string psf,int count,int originalSource)
 {
     if(count==graph.size()-1)
     {
+        psf+=to_string(s);
+         cout<<psf;
+         for(int n=0;n<graph[s].size();n++)
+         {
+             Edge e1=graph[s][n];
+             if(e1.nbr==originalSource)
+             {
+                 cout<<"Cycle"<<endl;
+                 return;   //this return is imp here
+             }
 
 
-         cout<<psf<<endl;
+         }
+        cout<<"Path"<<endl;
 
         return;
     }
@@ -75,7 +86,7 @@ void hamiltonianPath(int s, vector<bool>& visited, string psf,int count)
         if(visited[ne.nbr]==false) {
 
 
-            hamiltonianPath( ne.nbr, visited,psf+to_string(s),count+1);
+            hamiltonianPath( ne.nbr, visited,psf+to_string(s),count+1,originalSource);
 
 
         }
@@ -113,7 +124,7 @@ int main()
     cout<<endl;
     vector<bool> visited(7,false);
 
-    hamiltonianPath(0,visited,"",0);
+    hamiltonianPath(3,visited,"",0,3);
 
 
 
