@@ -17,7 +17,7 @@ int  stairs(int n ,int qb[])
     {
         return 0;
     }
-    if(qb[n]!=0)
+    else if(qb[n]!=0)
     {
         return qb[n];
     }
