@@ -8,6 +8,40 @@
 using namespace std;
 
 
+
+void printpaths(vector<vector<int>>& global,int i,int j,string psf)
+{
+
+    if(i==global.size()-1 &&j==global[0].size()-1)
+    {
+               cout<<psf;
+               return ;
+    }
+    else if(i==global.size()-1)
+    {
+        printpaths(global, i, j + 1, psf + "h");
+    }
+    else if(j==global[0].size()-1)
+    {
+        printpaths(global, i + 1, j, psf + "v");
+    }
+
+        else {
+               if (global[i][j + 1] > global[i + 1][j]) {
+                   printpaths(global, i, j + 1, psf + "v");
+               }
+               else if (global[i][j + 1] < global[i + 1][j]) {
+                   printpaths(global, i + 1, j, psf + "h");
+               }
+               else {
+                   printpaths(global, i + 1, j, psf + "v");
+                   printpaths(global, i, j + 1, psf + "h");
+               }
+           }
+return ;
+}
+
+
 int main()
 {
 
@@ -74,4 +108,6 @@ int main()
     cout<<endl;
     }
     cout<<"Min coins required to pay and get out of jail is "<<global[0][0];
+    cout<<endl;
+        printpaths(global,0,0,"");
 }
